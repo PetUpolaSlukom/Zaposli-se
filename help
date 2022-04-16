@@ -1,0 +1,60 @@
+<?php
+            $jobs = selectQuery("job", true);
+            //var_dump($jobs);
+
+            $string = '2022-02-17';//string variable
+            $date = date("Y-m-d");//date variable
+
+            $time1 = strtotime($string);
+            var_dump($time1);
+            $time2 = strtotime($date);
+            var_dump($time2);
+            if($time1 > $time2){
+                //var_dump('vece prvo');
+            }
+            else{
+                //var_dump('vece drugo');
+            }
+
+
+
+            echo('<h5 class="text-left text-muted col-12">Poslovi('. count($jobs) . ' oglasa)</h5>');
+            foreach ($jobs as $job):
+        ?>
+        <div class="card col-10 my-3">
+            <div class="d-flex justify-content-between p-0 flex-wrap">
+<!--                <div class="premiumTag col-12">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <h6 class="bg-primary py-1 px-2 h-100 text-white">Premium</h6>-->
+<!--                </div>-->
+                <div>
+                    <h6 class="bg-warning py-2 px-2 h-100 text-white d-inline">Novo</h6>
+                </div>
+            </div>
+            <div class="card-body d-flex justify-content-between">
+                <div class="col-5 d-flex flex-wrap align-items-center">
+                    <h4 class="card-title text-center col-12">Full stack developer</h4>
+                    <img src="assets/img/3MD_Logo.jpg" alt="" class="ml-auto mr-auto">
+                    <h5 class="text-center col-12">
+                        <a href="#" class="card-title job-comapny-name"><?=$job->position?></a>
+                    </h5>
+                </div>
+                <div class="col-7">
+
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <p><i class="fas fa-map-marker-alt text-muted"></i> Remote</p>
+                    <p><i class="far fa-clock text-muted"></i> 28.2.2022.</p>
+                    <p><i class="fas fa-coins text-muted"></i> 1500 EUR</p>
+                    <p><i class="fas fa-briefcase text-muted"></i> Praksa</p>
+                    <p><i class="fas fa-graduation-cap text-muted"></i> Oglas dostupan studentima</p>
+                    <p><i class="fas fa-wheelchair  text-muted"></i> Oglas dostupan osobama sa invaliditetom</p>
+                    <a href="#" class="btn btn-primary">Detaljnije</a>
+
+                </div>
+
+            </div>
+        </div>
+        <?php
+        endforeach;
+        ?>

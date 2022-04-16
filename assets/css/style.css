@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(43, 42, 51);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none!important;
+}
+.td-u{
+    text-decoration: underline!important;
+}
+.transpBgHover:hover{
+    opacity: 0.7;
+}
+.cursorDefault{
+    cursor: default !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.premiumTag{
+    height: 5px;
+    background: rgb(0,123,255);
+    background: linear-gradient(90deg, rgba(0,123,255,1) 10%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(255,193,7,1) 90%);
+}
+.card{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.cardCompLogo{
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+.premiumTagHome{
+    top: 10px;
+    right: 10px;
+}
+.starTagHome{
+    right: 10px;
+    bottom: 10px;
+}
+.hover-tr-zoom:hover{
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+.icon-like {
+    width: 35px;
+    height: 35px;
+}
+.bg-dark-gradient{
+    border: none;
+    color: white;
+    background: rgba(100,106,112, 0.3);
+    background: linear-gradient(90deg, rgba(110,116,122,1) 0%, rgba(52,58,64,1) 100%);
+}
+.card-img-height{
+    height: 220px;
+}
+.background-page-header{
+    height: 280px;
+    padding: 50px 0px 50px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.bg-companies{
+    background-image: url('../img/main_bg.jpg');
+}
+.shadow{
+    -webkit-box-shadow: 0px 5px 14px -3px #343a40;
+    box-shadow: 0px 5px 14px -3px #343a40;
+}
+#home-header{
+    background-image: url('../img/home-hover1.jpg');
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg-darkTransparent{
+    padding: 50px 0px 50px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.jobLogo{
+    top: 60px;
+    right: 60px;
+}
+.fontBlog{
+    font-size: large;
+}
+.fora{
+    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 97% 61%, 3% 61%, 0% 70%, 0% 30%);
+}
